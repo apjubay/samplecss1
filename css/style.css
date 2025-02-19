@@ -5,7 +5,7 @@ body {
 
 /*Write a CSS rule to style the header tag to modify the background color property.*/
 header{
-    background-color: #94d1d9;
+    background-color: #AFEEEE
 }
 
 /*Write a CSS rule to style the nav tag to modify the background color property.*/
@@ -20,20 +20,21 @@ nav{
 /*Write a CSS rule to style the footer tag to modify the background color property.*/
 
 footer {
-    background-color: #94d1d9;
+    background-color: #AFEEEE;
 }
 
 /*Write a CSS rule to style the li tag to modify the display and width properties. */ 
-ul{
+/*ul{
     padding: 0;
-}
+}*/
 
-li{
+/*/li{
     display: inline-block;
     width: 15vw;
     margin:0;
     padding: 0;
-}
+}*/
+
 /*Write a CSS rule to style the h1 tag to modify the text alignment, font family, and color  properties. */
 h1{
     text-align: center;
@@ -42,4 +43,57 @@ h1{
 /*Write a CSS rule to style the p tag to modify the line height property. */ 
 p{
     line-height: 4vh;
+}
+
+
+/*----------Homework 2------------*/
+/*Add a working "Skip to Main Content" link to each page by adding an id to the main tag and then adding an anchor (a tag) earlier in the file that will link to it.*/
+
+/*Comment out the existing styling for the li element.*/
+
+/*Change the nav element to use inline-block and have a width of about 80%.*/
+nav  {
+    display: inline-block;
+    width: 80%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+/*Use a descendent selector to style only the image in the nav to have a width of about 10%. (If you want to make your site look a bit more like my screenshot, you can also add position: relative;  top: 20px; to the rule.*/
+header img{
+    width:10%;
+    position:relative;
+    top: 20px;
+}
+
+/*Style the grid class to use a two column grid where each column is approximately 40%.  Don't forget that to style a class element your selector should start with a period.*/
+/*Go back and adjust the grid class again. Play with the justify-content, align-items, and row-gap property values to copy the look of the screenshots above.*/
+.gallery{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+/*There is a good chance that your site will not look like mine. Use the descendent selector to style only the images in the grid class to have a width of 100%. (Check the parks page to make sure this change doesn't affect any images in the flex class.) */  
+.gallery img{
+    width: 100%;
+}
+
+/*Style the flex class to use flex. Play with the flex-wrap and justify-content property values to copy the look of the screenshots above.*/
+.panorama{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.panorama img{
+    padding: 10px 10px;
 }
